@@ -20,8 +20,8 @@ public class MyBean {
 
 
         System.out.println("Invoking getBank...");
-        java.lang.String _getBank_blz = "37050198";
-        com.thomas_bayer.blz.DetailsType _getBank__return = port.getBank(_getBank_blz);
+        //java.lang.String _getBank_blz = "37050198";
+        com.thomas_bayer.blz.DetailsType _getBank__return = port.getBank(id);
         System.out.println("getBank.result=" + _getBank__return.getBezeichnung());
 
 
