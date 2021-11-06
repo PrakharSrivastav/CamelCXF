@@ -10,7 +10,8 @@
              targetNamespace="http://tempuri.org">
     <types>
         <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org">
-            <s:import namespace="http://tempuri.org/ByNameDataSet" schemaLocation="https://www.crcind.com:443/csp/samples/SOAP.ByNameDataSet.cls?XSD"/>
+            <s:import namespace="http://tempuri.org/ByNameDataSet"
+                      schemaLocation="https://www.crcind.com:443/csp/samples/SOAP.ByNameDataSet.cls?XSD"/>
             <s:import namespace="http://tempuri.org/QueryByName_DataSet" schemaLocation="https://www.crcind.com:443/csp/samples/SOAP.Demo.QueryByName.DS.cls?XSD"/>
             <s:element name="AddInteger">
                 <s:complexType>

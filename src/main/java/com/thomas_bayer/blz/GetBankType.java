@@ -59,10 +59,4 @@ public class GetBankType {
         this.blz = value;
     }
 
-    @Override
-    public String toString() {
-        return "GetBankType{" +
-                "blz='" + blz + '\'' +
-                '}';
-    }
 }
