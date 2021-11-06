@@ -62,6 +62,13 @@ public class BankRouteBuilder extends EndpointRouteBuilder {
         from(direct("{{component.error.name}}"))
                 .routeId("{{component.error.final.route.id}}")
                 .log("Error : ${body} ");
+
+
+        // Use the below if you want to use custom pojo instead of cxf components
+        // from(timer("MyTimer").fixedRate(true).period(5000))
+        //        .setBody(constant("37050198"))
+        //        .bean(BankValidationBean.class, "GetBankName(${body})")
+        //        .log("${body}");
     }
 
 

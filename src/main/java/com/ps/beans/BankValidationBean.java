@@ -1,8 +1,13 @@
 package com.ps.beans;
 
+import com.thomas_bayer.blz.BLZService;
+import com.thomas_bayer.blz.BLZServicePortType;
+import com.thomas_bayer.blz.GetBankType;
 import org.apache.camel.Exchange;
 import org.apache.camel.Handler;
 import org.apache.camel.ValidationException;
+
+import javax.xml.namespace.QName;
 
 public class BankValidationBean {
     @Handler
@@ -20,9 +25,7 @@ public class BankValidationBean {
             throw new ValidationException(ex, "bad.id");
         }
     }
-}
 
-    /*
     private static final QName qname = new QName(
             "http://thomas-bayer.com/blz/",
             "BLZService");
@@ -47,4 +50,7 @@ public class BankValidationBean {
     public static BLZServicePortType getServicePort() {
         final BLZService ss = new BLZService(BLZService.WSDL_LOCATION, qname);
         return ss.getBLZServiceSOAP12PortHttp();
-    }*/
+    }
+}
+
+
