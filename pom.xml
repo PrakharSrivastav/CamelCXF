@@ -66,7 +66,7 @@
                             <sourceRoot>${project.build.sourceDirectory}/</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>${project.basedir}/src/main/resources/service.wsdl</wsdl>
+                                    <wsdl>${project.basedir}/src/main/resources/service2.wsdl</wsdl>
                                     <extraargs>
                                         <extraarg>-verbose</extraarg>
                                         <extraarg>-client</extraarg>
