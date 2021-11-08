@@ -30,10 +30,7 @@ public class TempRouteBuilder extends EndpointRouteBuilder {
         // define the cxf endpoint to consume soap service
         final CxfEndpointBuilderFactory.CxfEndpointBuilder epCXFService = cxf("{{temp.service.path}}")
                 .serviceClass("{{temp.service.class}}")
-                .dataFormat(CxfEndpointBuilderFactory.DataFormat.POJO)
-                //.wrappedStyle(true)
-                //.loggingFeatureEnabled(true)
-                ;
+                .dataFormat(CxfEndpointBuilderFactory.DataFormat.POJO);
 
         from(epTimer)
                 .routeId("{{temp.service.route.id}}")

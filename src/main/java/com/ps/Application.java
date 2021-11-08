@@ -1,7 +1,6 @@
 package com.ps;
 
-import com.ps.routes.BankRouteBuilder;
-import com.ps.routes.TempRouteBuilder;
+import com.ps.routes.CountryRouteBuilder;
 import org.apache.camel.main.Main;
 
 public class Application {
@@ -12,9 +11,9 @@ public class Application {
         main.setDefaultPropertyPlaceholderLocation("classpath:application.properties");
 
         // register the required routes
-        main.configure().addRoutesBuilder(BankRouteBuilder.class);
-        main.configure().addRoutesBuilder(TempRouteBuilder.class);
-
+        // main.configure().addRoutesBuilder(BankRouteBuilder.class);
+        // main.configure().addRoutesBuilder(TempRouteBuilder.class);
+        main.configure().addRoutesBuilder(CountryRouteBuilder.class);
         // run the application
         main.run(args);
     }
